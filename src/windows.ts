@@ -1,13 +1,13 @@
 'use strict';
 
-const userOne: number[][] = [[8.5,9],[9.5,10], [15,16]];
-const userTwo: number[][] = [[9, 10], [11, 12]];
+const USER_ONE: number[][] = [[8.5,9],[9.5,10], [15,16]];
+const USER_TWO: number[][] = [[9, 10], [11, 12]];
 const TEST_OUTPUT: number[][] = [[10, 11], [12, 15], [16,17]];
 const END_OF_WORK: number = 18;
 const START_OF_WORK: number = 7;
 
 
-function main(day_start: number, 
+function main(dayStart: number, 
 			  dayEnd: number, 
 			  userOne: number[][], 
 			  userTwo: number[][]
@@ -23,7 +23,7 @@ function main(day_start: number,
 	let ends: number[] = [];
 
 	// Combining list and adding the two elements - morning and evening
-	const combinedArray = [[0, day_start], ...userOne, ...userTwo, [dayEnd, 24]];
+	const combinedArray = [[0, dayStart], ...userOne, ...userTwo, [dayEnd, 24]];
 	console.log(`combinedArray: ${combinedArray}`) // DEBUG
 	combinedArray.forEach( (item) => 
 		{	// Building arrays of starts and ends of windows
@@ -78,8 +78,8 @@ function main(day_start: number,
 }
 
 
-const userOne = userOne.map((arr) => { return arr.slice(); });
-const userTwo = userTwo.map((arr) => { return arr.slice(); });
+const userOne = USER_ONE.map((arr) => { return arr.slice(); });
+const userTwo = USER_TWO.map((arr) => { return arr.slice(); });
 
 console.log(`Workday: ${START_OF_WORK}-${END_OF_WORK}`);
 console.log(`User //1: ${userOne}`);
