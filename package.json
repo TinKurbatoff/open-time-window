@@ -1,0 +1,24 @@
+{
+  "name": "free_slots",
+  "version": "0.1.0",
+  "description": "Test project",
+  "main": "dist/windows.js",
+  "scripts": {
+    "start": "tsc && node dist/windows.js",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
